@@ -1,0 +1,36 @@
+ {
+    "name": "Flat Bench Press",
+    "timesRequired": 5,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuoG8uERpE306jlZx76nlx53R3MtWNC1QL-7MO-idVNwaPWYpfYjg0XOeIUMBS318-Uc&usqp=CAU",
+    "ratings": 4
+  },
+  {
+    "name": "Dumbell",
+    "timesRequired": 10,
+    "img": "https://cdn.shopify.com/s/files/1/0564/6113/1956/products/HEX_DUMBBELL_ALL_SHOP_75KG_700x700.jpg?v=1652944598",
+    "ratings": 5
+  },
+  {
+    "name": "Cycle",
+    "timesRequired": 15,
+    "img": "https://www.zerohealthcare.com/wp-content/uploads/2022/07/Yumin_2907_Product-Thumbnai-X-megaBike_1000x1000px.jpg",
+    "ratings": 5
+  },
+  {
+    "name": "Tower Dip Station",
+    "timesRequired": 10,
+    "img": "https://m.media-amazon.com/images/I/51z3bDM0mbL._AC_SY879_.jpg",
+    "ratings": 4
+  },
+  {
+    "name": "Trademill",
+    "timesRequired": 20,
+    "img": "https://rflbestbuy.com/images/detailed/74/treadmill-1.gif",
+    "ratings": 5
+  },
+  {
+    "name": "Zym Ball",
+    "timesRequired": 10,
+    "img": "https://www.sportsmarketbd.com/wp-content/uploads/2017/01/c-22.png",
+    "ratings": 3
+  }
