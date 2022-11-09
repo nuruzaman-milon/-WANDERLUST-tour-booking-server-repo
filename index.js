@@ -19,12 +19,22 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run(){
     try{
         const servicesCollection = client.db('wanderlustDB').collection('services');
+
+        // homepage service api with only 3 services
         app.get('/services', async(req,res) =>{
-            const query = {}
+        const query = {}
         const cursor = servicesCollection.find(query);
         const services = await cursor.limit(3).toArray();
         res.send(services);
         })
+
+        //all service get api
+        app.get('/allServices', async(req,res) =>{
+          const query = {}
+          const cursor = servicesCollection.find(query);
+          const services = await cursor.toArray();
+          res.send(services);
+          })
     }
     finally{
 
