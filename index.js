@@ -85,7 +85,7 @@ async function run() {
           service_id: req.query.service_id
         }
       }
-      const cursor = reviewsCollection.find(query);
+      const cursor = reviewsCollection.find(query).sort({"date":-1});
       const reviews = await cursor.toArray();
       res.send(reviews);
     });
