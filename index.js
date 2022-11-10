@@ -65,7 +65,7 @@ async function run(){
           res.send(reviews);
         });
 
-        //get api for review
+        //get api for my-review
         app.get('/myReviews', async(req,res) =>{
           let query = {}
           if(req.query.email){
@@ -76,6 +76,15 @@ async function run(){
           const cursor = reviewsCollection.find(query);
           const reviews = await cursor.toArray();
           res.send(reviews);
+        });
+
+        //delete api for my-review
+        app.delete('/myReviews/:id', async(req,res) =>{
+          const id = req.params.id
+          console.log(id);
+          const query = { _id:ObjectId(id) }
+          const result = await reviewsCollection.deleteOne(query)
+          res.send(result)
         });
     }
     finally{
